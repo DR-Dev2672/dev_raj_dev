@@ -1,0 +1,1 @@
+Frontend: React pages live in `src/pages`. Edit styles in `src/index.css`.
