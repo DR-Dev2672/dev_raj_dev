@@ -18,26 +18,65 @@ async function seed(){
   await Profile.deleteMany();
 
   await Profile.create({
-    name: 'Your Name',
-    headline: 'Full-stack Developer | React • Node • MongoDB',
-    about: 'Passionate developer building clean, performant web apps.',
+    name: 'Dev Raj Dev',
+    headline: 'Full Stack Developer & DevOps Engineer',
+    about: 'Passionate developer focusing on full-stack apps, automation and DevOps practices.',
     location: 'City, Country',
-    socials: { github: 'https://github.com/yourname', linkedin: '', twitter: '' }
+    image: 'https://picsum.photos/seed/profile/400/400',
+    resume: 'https://example.com/resume.pdf',
+    college: 'Your College Name',
+    school: 'Your School Name',
+    socials: {
+      github: 'https://github.com/yourname',
+      linkedin: 'https://www.linkedin.com/in/yourname',
+      twitter: '',
+      codeforces: 'https://codeforces.com/profile/yourhandle',
+      leetcode: 'https://leetcode.com/yourhandle'
+    }
   });
 
   await Project.insertMany([
     {
       title: 'Awesome Project',
-      description: 'A brief description of the awesome project. It does cool things.',
+      description: 'A brief description of the awesome project. It does cool things and demonstrates full-stack features.',
       link: 'https://example.com',
-      image: '',
+      image: 'https://picsum.photos/seed/awesome/800/450',
       techStack: ['React', 'Node', 'MongoDB']
     },
     {
       title: 'Another App',
-      description: 'Another example project showcasing UI and APIs.',
+      description: 'A sample app showcasing UI components and API integration.',
       link: '',
+      image: 'https://picsum.photos/seed/another/800/450',
       techStack: ['Vite', 'Express']
+    },
+    {
+      title: 'Task Manager',
+      description: 'A lightweight task manager with drag-and-drop and realtime updates (mock).',
+      link: 'https://github.com/yourname/task-manager',
+      image: 'https://picsum.photos/seed/task/800/450',
+      techStack: ['React', 'Socket.io', 'Node']
+    },
+    {
+      title: 'E-Commerce UI',
+      description: 'A polished storefront UI with product gallery and cart interactions.',
+      link: 'https://github.com/yourname/ecommerce-ui',
+      image: 'https://picsum.photos/seed/ecom/800/450',
+      techStack: ['React', 'Tailwind', 'Vite']
+    },
+    {
+      title: 'Data Visualizer',
+      description: 'Interactive charts and dashboards built for demoing datasets.',
+      link: '',
+      image: 'https://picsum.photos/seed/data/800/450',
+      techStack: ['D3', 'React']
+    },
+    {
+      title: 'Portfolio CMS Mock',
+      description: 'A minimal admin mock to manage projects and journey entries (frontend-only demo).',
+      link: 'https://github.com/yourname/portfolio-cms-mock',
+      image: 'https://picsum.photos/seed/cms/800/450',
+      techStack: ['React', 'LocalStorage']
     }
   ]);
 

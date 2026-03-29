@@ -17,6 +17,17 @@ body{margin:0;font-family:Inter,Segoe UI,Helvetica,Arial;background:radial-gradi
 .hero{display:flex;align-items:center}
 .hero .hero-card{margin-left:24px;background:var(--card);padding:18px;border-radius:10px;min-width:220px}
 .muted{color:var(--muted)}
+
+.hero.container{display:flex;gap:28px;align-items:flex-start}
+.hero-left{flex:1}
+.hero-right{width:300px}
+.profile-card{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center}
+.profile-img{width:180px;height:180px;border-radius:999px;object-fit:cover;border:4px solid rgba(255,255,255,0.04)}
+.card-info{margin-top:12px;text-align:center}
+.socials{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.btn-link{color:var(--muted);background:transparent;padding:8px 10px;border-radius:8px;text-decoration:none}
+.btn{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+.education{margin-top:14px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:16px}
 .card h3{margin:0}
@@ -26,3 +37,6 @@ body{margin:0;font-family:Inter,Segoe UI,Helvetica,Arial;background:radial-gradi
 .skill-col{margin-right:24px}
 .skills{display:flex;gap:24px}
 @media(max-width:700px){.hero{flex-direction:column}.skills{flex-direction:column}}
+.hero.container{flex-direction:column}
+.hero-right{width:100%}
+.profile-card{width:100%}

@@ -5,11 +5,13 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Journey from './pages/Journey'
 import CodingBackground from './pages/CodingBackground'
+import Header from './pages/Header'
+import Footer from './pages/Footer'
 
 export default function App(){
   return (
     <div className="app-root">
-      <Navbar />
+      <Header />
       <main className="container">
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -17,6 +19,7 @@ export default function App(){
           <Route path="/journey" element={<Journey/>} />
           <Route path="/coding-background" element={<CodingBackground/>} />
         </Routes>
+        <Footer/>
       </main>
     </div>
   )
